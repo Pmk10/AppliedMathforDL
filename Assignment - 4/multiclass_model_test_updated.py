@@ -5,7 +5,7 @@ import tensorflow as tf
 import pytest
 import os
 
-os.chdir('/Users/karthikeyanm/AppliedMathforDL')
+os.chdir('/Users/karthikeyanm/AppliedMathforDL/Assignment - 4')
 
 from multiclass_model_solution_updated import fit_mnist_model, evaluate_mnist_model
 from multiclass_model_solution_updated import get_mnist_data
