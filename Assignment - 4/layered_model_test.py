@@ -5,7 +5,8 @@ import tensorflow as tf
 import pytest
 import os
 
-os.chdir('/Users/karthikeyanm/AppliedMathforDL')
+
+os.chdir('/Users/karthikeyanm/AppliedMathforDL/Assignment - 4')
 
 from layered_modelsolution import define_dense_model_single_layer, define_dense_model_with_hidden_layer
 from layered_modelsolution import fit_mnist_model_single_digit, evaluate_mnist_model_single_digit
