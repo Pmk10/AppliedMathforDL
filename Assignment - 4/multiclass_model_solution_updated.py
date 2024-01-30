@@ -4,7 +4,6 @@ from tensorflow.keras import layers
 from layered_modelsolution import get_mnist_data
 import os
 
-os.chdir('/Users/karthikeyanm/AppliedMathforDL/Assignment - 4')
 
 def define_dense_model_single_layer(input_length, activation_f='sigmoid', output_length=10):
     """Define a dense model with a single layer for multiclass classification.
