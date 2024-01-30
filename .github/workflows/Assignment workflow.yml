@@ -34,4 +34,5 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m pytest "Assignment 4"/*.py
+        cd "Assignment 4"
+        python -m pytest *.py
