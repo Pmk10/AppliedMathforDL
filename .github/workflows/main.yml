@@ -1,4 +1,4 @@
-name: Test
+name: Assignment 4 & 5 Workflow
 
 on:
   push:
@@ -17,6 +17,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8  # Update this with your Python version
+        
+    - name: Update Protobuf
+      run: pip install --upgrade protobuf
 
     - name: Set up environment
       run: echo "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python" >> $GITHUB_ENV
@@ -25,7 +28,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # If you have any requirements
-
+        
+    - name: Update TensorFlow
+      run: pip install --upgrade tensorflow
+      
     - name: Run tests
       run: |
-        python -m pytest
+        python -m pytest Assignment\ -\ 4/*.py
