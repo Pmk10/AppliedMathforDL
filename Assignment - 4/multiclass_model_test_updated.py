@@ -5,6 +5,8 @@ import tensorflow as tf
 import pytest
 import os
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 
 from multiclass_model_solution_updated import fit_mnist_model, evaluate_mnist_model
 from multiclass_model_solution_updated import get_mnist_data
