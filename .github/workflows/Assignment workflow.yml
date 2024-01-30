@@ -32,6 +32,9 @@ jobs:
     - name: Update TensorFlow
       run: pip install --upgrade tensorflow
 
+    - name: List contents of "Assignment 4" directory
+      run: ls -R "Assignment 4"
+      
     - name: Run tests
       run: python -m pytest "Assignment 4"/*.py
       working-directory: ${{ github.workspace }}
