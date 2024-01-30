@@ -5,6 +5,7 @@ import tensorflow as tf
 import pytest
 import os
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 from layered_modelsolution import define_dense_model_single_layer, define_dense_model_with_hidden_layer
