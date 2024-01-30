@@ -33,6 +33,5 @@ jobs:
       run: pip install --upgrade tensorflow
 
     - name: Run tests
-      run: |
-        cd "Assignment 4"
-        python -m pytest *.py
+      run: python -m pytest "Assignment 4"/*.py
+      working-directory: ${{ github.workspace }}
