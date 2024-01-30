@@ -1,4 +1,4 @@
-name: Assignment 4 & 5 Workflow
+name: Assignment 4 Workflow
 
 on:
   push:
@@ -18,23 +18,10 @@ jobs:
       with:
         python-version: 3.8  # Update this with your Python version
 
-    - name: Update Protobuf
-      run: pip install --upgrade protobuf
-
-    - name: Set up environment
-      run: echo "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python" >> $GITHUB_ENV
-
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # If you have any requirements
 
-    - name: Update TensorFlow
-      run: pip install --upgrade tensorflow
-
-    - name: List contents of "Assignment 4" directory
-      run: ls -R "Assignment 4"
-      
     - name: Run tests
-      run: python -m pytest "Assignment 4"/*.py
-      working-directory: ${{ github.workspace }}
+      run: python -m pytest "Assignment 4"
